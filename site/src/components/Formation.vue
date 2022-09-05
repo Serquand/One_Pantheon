@@ -33,6 +33,10 @@ export default {
         margin: 100px auto 45px;
     }
 
+    .formation-main-container h4 {
+        text-align: center;
+    }
+
     .formation-content {
         display: flex;
         justify-content: space-around;
@@ -51,6 +55,14 @@ export default {
         width: 64px;
         height: auto;
         margin: 10px 0;
+    }
+
+    @media all and (max-width: 1300px) {
+        .formation-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+        }
     }
 
     @media all and (max-width: 650px) {

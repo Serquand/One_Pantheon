@@ -70,5 +70,14 @@ export default {
             flex-direction: column-reverse;
             gap: 25px;
         }
+
+        .logo img {
+            height: auto;
+            width: 200px;
+        }
+
+        .logo img:last-child {
+            margin-bottom: 20px;
+        }
     }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="service-container">
+    <div :class="['service-container', visible ? 'service-container-visible' : '']">
         <div class="service">
             <div class="content"></div> 
             <div class="overlay"></div>
@@ -11,17 +11,24 @@
 </template>
 
 <script>
+ 
+import { ref } from 'vue';
+
 export default {
     props: {
         title: {
             type: String, 
             required: true
         }, 
-
         description: {
             type: String, 
             required: true
         }
+    }, 
+
+    setup() {
+        const visible = ref(false)
+        return { visible }
     }
 }
 </script>
@@ -33,6 +40,17 @@ export default {
     align-items: center;
     margin-top: 50px;
     width: 300px;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: goBack 2s linear 1 forwards;
+}
+
+.service-container-visible {
+    animation: goBack 2s linear 1 forwards;
+}
+
+.service-container-visible .overlay {
+    animation: appBox 4s ease 1 forwards;
 }
 
 .service {
@@ -95,5 +113,12 @@ img.title-service {
 @keyframes appBox {
     from { height: 0%; } 
     to { height: 100%; }
+}
+
+@keyframes goBack {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 </style>
