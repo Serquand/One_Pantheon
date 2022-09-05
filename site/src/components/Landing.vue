@@ -1,6 +1,6 @@
 <template>
     <div id="who-are-you">
-        <h2>Qui sommes-nous ?</h2>
+        <h2>Le concept</h2>
         <div class="who-are-you-content">
             <div class="speech">
                 <p>
@@ -45,7 +45,11 @@ export default {
     }
 
     .who-are-you-content p {
-        font-size: 18px;
+        font-size: 20px;
+    }
+
+    strong {
+        font-size: 24px;
     }
 
     .logo img {

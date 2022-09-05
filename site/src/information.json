@@ -6,41 +6,41 @@
     "twitter": "https://twitter.com/willtraore", 
     "services": [
         {
-            "title": "Apps", 
+            "title": "Projets", 
             "description": "Développement d'apps et de jeux"
         }, 
         {
-            "title": "Suivi",
+            "title": "Management",
             "description": "Accompagnement et suivi dans la gestion de projets"
         },
         {
             "title": "Formation",
-            "description": "Formation sur différents sujets / domaines"
+            "description": "Différentes formations avec licences professionnelles à la clé"
         },
         {
-            "title": "1",
+            "title": "/assets/etoile.png", 
             "description": "Seul incubateur-formateur de l'EFREI"
         }, 
         {
             "title": "5+",
-            "description": "Plus de 5 projets"
+            "description": "Plus de 5 projets en cours de conception"
         }
     ], 
     "formations": [
         {
-            "title": "Langues",
+            "title": "Langues (🇪🇸 / 🇬🇧)",
             "image": "/assets/formations/langues.png"
         },
         {
-            "title": "Licences reconnues",
+            "title": "Licences professionnelles reconnues",
             "image": "/assets/formations/license.png"
         },
         {
-            "title": "Informatique",
+            "title": "Développement informatique",
             "image": "/assets/formations/informatique.png"
         },
         {
-            "title": "Electronique",
+            "title": "Approfondissement des connaissances en électronique",
             "image": "/assets/formations/electronique.png"
         }
     ]

@@ -1,11 +1,12 @@
 <template>
     <div class="service-container">
         <div class="service">
-        <div class="content"></div> 
-        <div class="overlay"></div>
-        <p class="text">{{ title }}</p> 
+            <div class="content"></div> 
+            <div class="overlay"></div>
+            <p v-if="!title.startsWith('/')" class="title-service title-text-service">{{ title }}</p> 
+            <img class="title-service" v-else :src="title" />
         </div>
-        <h4 class="description">{{  description }}</h4>
+        <h4 class="description">{{ description }}</h4>
     </div>
 </template>
 
@@ -31,6 +32,7 @@ export default {
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    width: 300px;
 }
 
 .service {
@@ -51,30 +53,35 @@ export default {
     background-color: white;
 }
 
-.text {
-    color: black;
-}
-
 .overlay {
     top: 0;
     width: 100%;
     height: 0%;
-    background-color: black;
+    background-color: darkblue;
     position: absolute;
     z-index: -5;
     animation: appBox 4s ease 1 forwards;
 }
 
-.text {
+.title-service {
     position: absolute;
     height: fit-content;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
+} 
+
+img.title-service {
+    height: 100px;
+    width: auto;
+}
+
+.title-text-service {
     font-size: 35px;
     font-weight: 600;
     font-variant-caps: small-caps;
+    color: black !important;
 }
 
 .description {

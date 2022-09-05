@@ -31,4 +31,11 @@ export default {
 </script>
 
 <style>
+    .services-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+    }
 </style>
