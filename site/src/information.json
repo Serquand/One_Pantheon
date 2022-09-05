@@ -1,0 +1,47 @@
+{
+    "numberPhone": "0780444579",
+    "numberPhoneDisplay": "07 80 44 45 79", 
+    "contactMail": "esteban.vincent@efrei.net", 
+    "linkedin": "https://www.linkedin.com/in/leo-le-corre/", 
+    "twitter": "https://twitter.com/willtraore", 
+    "services": [
+        {
+            "title": "Apps", 
+            "description": "Développement d'apps et de jeux"
+        }, 
+        {
+            "title": "Suivi",
+            "description": "Accompagnement et suivi dans la gestion de projets"
+        },
+        {
+            "title": "Formation",
+            "description": "Formation sur différents sujets / domaines"
+        },
+        {
+            "title": "1",
+            "description": "Seul incubateur-formateur de l'EFREI"
+        }, 
+        {
+            "title": "5+",
+            "description": "Plus de 5 projets"
+        }
+    ], 
+    "formations": [
+        {
+            "title": "Langues",
+            "image": "/assets/formations/langues.png"
+        },
+        {
+            "title": "Licences reconnues",
+            "image": "/assets/formations/license.png"
+        },
+        {
+            "title": "Informatique",
+            "image": "/assets/formations/informatique.png"
+        },
+        {
+            "title": "Electronique",
+            "image": "/assets/formations/electronique.png"
+        }
+    ]
+}
