@@ -12,6 +12,7 @@
             </div>
             <div class="logo">
                 <img src="/assets/Logo1P.png" alt="Logo One Panthéon" />
+                <img src="/assets/LogoEfrei.png" alt="Logo EFREI" />
             </div>
         </div>
     </div>
@@ -52,9 +53,16 @@ export default {
         font-size: 24px;
     }
 
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
     .logo img {
-        width: 250px;
-        height: auto;
+        height: 125px;
+        width: auto;
     }
 
     @media all and (max-width: 1100px) {

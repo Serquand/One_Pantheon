@@ -29,16 +29,17 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100&display=swap');
+
 *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Serif', serif;
 }
 
 html {
     scroll-behavior: smooth;
-    /* background-color: #689fbc; */
-    /* background: linear-gradient(180deg, rgba(70,123,157,1) 50%, rgba(104,159,188,1) 100%); */
 }
 
 #full-size {
