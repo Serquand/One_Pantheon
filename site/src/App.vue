@@ -5,7 +5,6 @@
         <Services />
         <Formation />
         <FooterBar />
-        <div id="full-size"></div>
     </div>
 </template>
 
@@ -40,16 +39,9 @@ export default {
 
 html {
     scroll-behavior: smooth;
-}
-
-#full-size {
-    height: 100%;
-    width: 100%;
-    position: fixed;
     background: linear-gradient(180deg, rgba(70,123,157,1) 50%, rgba(104,159,188,1) 100%);
-    top: 0;
-    left: 0;
-    z-index: -50;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 *:not(.text) {
