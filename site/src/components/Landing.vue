@@ -1,5 +1,5 @@
 <template>
-    <div id="who-are-you">
+    <section id="who-are-you">
         <h2>Le concept</h2>
         <div class="who-are-you-content">
             <div class="speech">
@@ -15,7 +15,7 @@
                 <img src="/assets/LogoEfrei.png" alt="Logo EFREI" />
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

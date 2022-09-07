@@ -20,12 +20,14 @@
 
             <div class="navigation-container">
                 <h3>Navigation</h3>
-                <ul class="footer-ul navigation-ul">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#who-are-you">Qui sommes-nous</a></li>
-                    <li><a href="#services">Nos services</a></li>
-                    <li><a href="#training">Nos formations</a></li>
-                </ul>
+                <nav>
+                    <ul class="footer-ul navigation-ul">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#who-are-you">Qui sommes-nous</a></li>
+                        <li><a href="#services">Nos services</a></li>
+                        <li><a href="#training">Nos formations</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <hr />

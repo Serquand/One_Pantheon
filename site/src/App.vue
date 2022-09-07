@@ -1,9 +1,11 @@
 <template>
     <div id="app-main-container">
         <HeaderBar />
-        <Landing />
-        <Services />
-        <Formation />
+        <main>
+            <Landing />
+            <Services />
+            <Formation />
+        </main>
         <FooterBar />
     </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <div id="services">
+    <section id="services">
         <h2>Nos services</h2>
         <div class="services-content">
             <div
@@ -11,7 +11,7 @@
                 />
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

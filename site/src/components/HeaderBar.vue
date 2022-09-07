@@ -1,5 +1,5 @@
 <template>
-    <div class="header-bar-main-container">
+    <header class="header-bar-main-container">
         <div class="header-bar-container">
             <div class="logo-container">
                 <img src="/assets/Logo1P.png" alt="Logo One Panthéon" />
@@ -13,7 +13,7 @@
                 </ul>
             </nav>
         </div>
-    </div>
+    </header>
 </template>
 
 <script>
