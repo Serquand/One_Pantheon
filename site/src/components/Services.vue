@@ -31,6 +31,11 @@ export default {
 </script>
 
 <style>
+    #services {
+        padding-top: 50px;
+        margin-top: -50px;
+    }
+
     .services-content {
         display: flex;
         justify-content: center;

@@ -28,6 +28,8 @@ export default {
     #who-are-you {
         width: 70%;
         margin: auto;
+        padding-top: 70px;
+        margin-top: -70px;            
     }
 
     h2 {

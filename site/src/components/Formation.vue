@@ -25,6 +25,11 @@ export default {
 </script>
 
 <style>
+    #training {
+        padding-top: 20px;
+        margin-top: -20px;            
+    }
+
     .formation-main-container {
         margin-bottom: 75px;
     }
