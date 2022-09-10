@@ -1,9 +1,26 @@
 {
-    "numberPhone": "0621142804",
-    "numberPhoneDisplay": "06 21 14 28 04", 
-    "contactMail": "contact@onepantheon.fr", 
-    "linkedin": "https://www.linkedin.com/company/one-panth%C3%A9on/?", 
-    "twitter": "https://twitter.com/1PantheonAssas", 
+    "reseaux": [
+        {
+            "link": "tel:0621142804", 
+            "nom": "phone"
+        }, 
+        {
+            "link": "mailto:contact@onepantheon.fr", 
+            "nom": "Mail"
+        }, 
+        {
+            "link": "https://www.linkedin.com/company/one-panth%C3%A9on/?", 
+            "nom": "linkedin"
+        }, 
+        {
+            "link": "https://twitter.com/1PantheonAssas", 
+            "nom": "twitter"
+        }, 
+        {
+            "link": "https://discord.gg/rnQfXBnDZX", 
+            "nom": "discord"
+        }
+    ],
     "services": [
         {
             "title": "Projets", 
