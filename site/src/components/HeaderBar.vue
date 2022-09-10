@@ -8,8 +8,19 @@
             <nav class="nav-container">
                 <ul>
                     <li><a href="#who-are-you">Présentation</a></li>
-                    <li><a href="#services">Nos services</a></li>
-                    <li><a href="#training">Nos formations</a></li>
+                    <li>
+                        <a href="#services">
+                            <span class="nos-huge-device">Nos services</span>
+                            <span class="nos-little-device">Services</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#training">
+                            <span class="nos-huge-device">Nos formations</span>
+                            <span class="nos-little-device">Formations</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -23,6 +34,14 @@ export default {
 </script>
 
 <style>
+    .nos-huge-device {
+        display: inline;
+    }
+
+    .nos-little-device {
+        display: none;
+    }
+
     .header-bar-main-container {
         z-index: 1000;
         position: sticky;
@@ -102,11 +121,11 @@ export default {
 
     @media all and (max-width: 700px) {
         .header-bar-container {
-            width: calc(100% - 20px);
+            width: calc(100% - 10px);
         }
 
         .nav-container ul {
-            gap: 10px;
+            gap: 5px;
         }
 
         h1 {
@@ -114,11 +133,19 @@ export default {
         }
 
         ul li a {
-            font-size: 15px;
+            font-size: 10px;
         }
 
         .logo-container img {
             width: 30px;
+        }
+        
+        .nos-huge-device {
+            display: none;
+        }
+
+        .nos-little-device {
+            display: inline;
         }
     }
 </style>
