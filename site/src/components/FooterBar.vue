@@ -11,10 +11,14 @@
             <div class="contact-container">
             <h3>Contact</h3>
                 <ul class="footer-ul contact-ul">
-                    <li><a :href="'mailto:' + info.contactMail">{{ info.contactMail }}</a></li>
-                    <li><a :href="'tel:' + info.numberPhone">{{ info.numberPhoneDisplay }}</a></li>
-                    <li><a :href="info.linkedin">{{ info.linkedin }}</a></li>
-                    <li><a :href="info.twitter">{{ info.twitter }}</a></li>
+                    <li 
+                        :key="reseau" 
+                        v-for="reseau in allOurReseaux"
+                    >
+                        <a :href="reseau.link">
+                            <img :src="'/assets/reseaux/' + reseau.nom + '.png'" :alt="reseau.nom">
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -124,11 +128,11 @@
 </style>
 
 <script>
-import Informations from "../information.json"
+import { reseaux } from "../information.json"
 export default {
     setup() {
-        const info = Informations
-        return { info }
+        const allOurReseaux = reseaux
+        return { allOurReseaux }
     }
 }
 </script>

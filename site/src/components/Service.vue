@@ -4,7 +4,7 @@
             <div class="content"></div> 
             <div class="overlay"></div>
             <p v-if="!title.startsWith('/')" class="title-service title-text-service">{{ title }}</p> 
-            <img class="title-service" v-else :src="title" />
+            <img v-else class="title-service" :src="title" />
         </div>
         <h4 class="description">{{ description }}</h4>
     </div>
@@ -54,8 +54,8 @@ export default {
 }
 
 .service {
-    height: 210px;
-    width: 210px;
+    height: 250px;
+    width: 250px;
     clip-path: polygon(0 30%, 50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%);
     display: flex;
     justify-content: center;
@@ -65,8 +65,8 @@ export default {
 }
 
 .content {
-    height: 200px;
-    width: 200px;
+    height: 240px;
+    width: 240px;
     clip-path: polygon(0 30%, 50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%);
     background-color: white;
 }
