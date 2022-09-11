@@ -4,7 +4,9 @@
         <div class="services-content">
             <div
                 :key="service"
-                v-for="service in allOurServices">
+                v-for="service in allOurServices"
+                :class="['bloc-service', 'service-' + (service.title.startsWith('/') ? 'incubateur' : service.title)]" 
+            >
                 <Service 
                     :description="service.description"
                     :title="service.title"    
@@ -26,7 +28,7 @@ export default {
     setup() {
         const allOurServices = services
         return { allOurServices }
-    }
+    },
 }
 </script>
 

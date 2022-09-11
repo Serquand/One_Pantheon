@@ -26,9 +26,23 @@ export default {
         }
     }, 
 
-    setup() {
-        const visible = ref(false)
-        return { visible }
+    setup(props) {
+        const visible = ref(false), serviceName = props.title.startsWith("/") ? 'incubateur' : props.title
+
+        return { visible, serviceName }
+    }, 
+
+    mounted() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if(entry.intersectionRatio > 0) {
+                    const currentSection = entry.target.getAttribute("class").replace("bloc-service", "").replace("service-", '').trim()
+                    if(currentSection === this.serviceName) this.visible = true;
+                }
+            })
+        }, { rootMargin: '0px 0px -300px 0px' })
+
+        document.querySelectorAll('.bloc-service').forEach(service => observer.observe(service))
     }
 }
 </script>
@@ -42,7 +56,6 @@ export default {
     width: 300px;
     opacity: 0;
     transform: translateY(-50px);
-    animation: goBack 2s linear 1 forwards;
 }
 
 .service-container-visible {
@@ -78,7 +91,6 @@ export default {
     background-color: darkblue;
     position: absolute;
     z-index: -5;
-    animation: appBox 4s ease 1 forwards;
 }
 
 .title-service {
