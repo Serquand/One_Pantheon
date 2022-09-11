@@ -6,7 +6,7 @@
                 <p>
                     Nous sommes l’unique incubateur-formateur de Paris Panthéon-Assas Université, ouvert à toutes et tous. <br />
                     One Panthéon s'adresse à tous ceux qui souhaitent apprendre, approfondir leurs compétences, imaginer de nouveaux concepts toujours dans un objectif d'enseignement et de partage.<br />
-                    Droit, informatique, sciences, photographie, sport… Il n’existe pas de profil particulier pour intégrer One Panthéon. <br />
+                    Droit, informatique, sciences, photographie, sport… Il n’existe pas de profil particulier pour intégrer One Panthéon. <br /><br />
                     <strong>Qu’attendez-vous donc pour participer à cette expérience unique ?</strong>
                 </p>
             </div>
