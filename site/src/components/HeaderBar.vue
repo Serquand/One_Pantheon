@@ -7,16 +7,27 @@
             </div>
             <nav class="nav-container">
                 <ul>
-                    <li><a href="#who-are-you">Présentation</a></li>
                     <li>
-                        <a href="#services">
+                        <a 
+                        :class="currentSection == 'who-are-you' ? 'active' : ''"
+                            href="#who-are-you">Présentation</a>
+                    </li>
+                    
+                    <li>
+                        <a 
+                        :class="currentSection == 'services' ? 'active' : ''"
+                            href="#services"
+                        >
                             <span class="nos-huge-device">Nos services</span>
                             <span class="nos-little-device">Services</span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#training">
+                        <a 
+                            :class="currentSection == 'training' ? 'active' : ''" 
+                            href="#training"
+                        >
                             <span class="nos-huge-device">Nos formations</span>
                             <span class="nos-little-device">Formations</span>
                         </a>
@@ -28,8 +39,27 @@
 </template>
 
 <script>
-export default {
+import { ref } from 'vue'
 
+export default {
+    setup() {
+        const currentSection = ref("")
+        return { currentSection }
+    },
+
+    mounted() {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.intersectionRatio > 0) {
+                    const section = entry.target.getAttribute("id")
+                    if(section === null || section === undefined) return 
+                    this.currentSection = section.split("-")[0]
+                }
+            })
+        }, { rootMargin: '0px 0px -20% 0px' })
+        
+        document.querySelectorAll("h2").forEach(titleSection => observer.observe(titleSection))
+    }
 }
 </script>
 
@@ -100,7 +130,7 @@ export default {
         background-color: white;
     }
 
-    .nav-container ul a:hover::after {
+    .nav-container ul a:hover::after, .active::after {
         animation: appUnderlineHovering 0.2s linear 1 forwards;
     }
 

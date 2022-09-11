@@ -1,6 +1,6 @@
 <template>
     <div id="training" class="formation-main-container">
-        <h2>Formations proposées</h2>
+        <h2 id="training-title">Formations proposées</h2>
         <div class="formation-content">
             <div
                 :key="formation"

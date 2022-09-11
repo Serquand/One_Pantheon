@@ -1,6 +1,6 @@
 <template>
     <section id="who-are-you">
-        <h2>Le concept</h2>
+        <h2 id="who-are-you-title">Le concept</h2>
         <div class="who-are-you-content">
             <div class="speech">
                 <p>

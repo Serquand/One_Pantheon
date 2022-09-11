@@ -59,11 +59,11 @@ export default {
 }
 
 .service-container-visible {
-    animation: goBack 2s linear 1 forwards;
+    animation: goBack 1s ease 1 forwards;
 }
 
 .service-container-visible .overlay {
-    animation: appBox 4s ease 1 forwards;
+    animation: appBox 2.5s ease 1 forwards;
 }
 
 .service {
