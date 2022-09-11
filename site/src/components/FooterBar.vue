@@ -104,14 +104,23 @@
         display: none;
     }
 
+    .contact-ul {
+        display: flex;
+        gap: 10px;
+    }
+
     @media all and (max-width: 650px) {
         .footer-main-container {
             flex-direction: column;
             gap: 40px;
-            align-items: flex-start;
+            align-items: center;
             width: min-content;
             margin: auto;
         }   
+
+        h3 {
+            text-align: center;
+        }
 
         .general-container {
             align-self: center;
@@ -124,6 +133,7 @@
             color: white;
             margin: 15px auto;
         }
+
     }
 </style>
 
