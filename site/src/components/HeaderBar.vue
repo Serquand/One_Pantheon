@@ -9,7 +9,7 @@
                 <ul>
                     <li>
                         <a 
-                        :class="currentSection == 'who-are-you' ? 'active' : ''"
+                        :class="currentSection == 'who' ? 'active' : ''"
                             href="#who-are-you">Présentation</a>
                     </li>
                     
