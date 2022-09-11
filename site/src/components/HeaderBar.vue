@@ -135,12 +135,8 @@ export default {
     }
 
     @keyframes appUnderlineHovering {
-        from {
-            width: 0%;
-        } 
-        to {
-            width: 100%;
-        }
+        from { width: 0%; } 
+        to { width: 100%; }
     }
 
     @media all and (max-width: 900px) {
